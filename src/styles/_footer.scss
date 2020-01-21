@@ -1,0 +1,20 @@
+footer {
+    background-color:white;
+    color:white;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    color:black;
+    max-width: $max-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: $desktop-padding;
+    @include mobile {
+        padding-bottom: $mobile-padding;
+    }
+    a, span {
+        text-decoration:none;
+        color:black;
+      }
+}

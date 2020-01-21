@@ -1,0 +1,102 @@
+.scrollbar.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: calc($max-content + 100px);
+    height: $nav-height;
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+    margin-right: auto;
+    margin-left: auto;
+    position: fixed;
+    top:0;
+    transition: top .6s ease-in-out;
+    z-index: 10;
+    background-color: white;
+    .navLogo {
+        width: 200px;
+        svg {
+            width: 100%;
+            height: auto;
+            path {
+                transition: fill .6s ease-in-out;
+                fill:black;
+            }
+        }
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        li {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 2px;
+            padding-top: 2px;
+            margin-bottom: 0;
+            a {
+                text-decoration: none;
+                color: black;
+                transition: color .6s ease-in-out;
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &.scrollbar-hidden {
+        top:-200px;
+        .stopShow & {
+            top: 0;
+      }
+   
+      }
+  }
+  
+  .menuButton {
+      button{
+          background-color: transparent;
+          -webkit-appearance: none;
+          border: 0;
+          outline: none;
+          height: 50px;
+          width: 50px;
+          svg {
+              width: 100%;
+              height: 100%;
+            path{
+                fill: transparent;
+                stroke: #000;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 3px;
+              }
+          }
+      }
+  }
+
+
+.reveal {
+    transition:opacity .3s linear;
+}
+[data-visible="true"] {
+    opacity:1;
+  }
+  [data-visible="false"] {
+    opacity: 0;
+    transition:opacity .3s linear;
+  }
+
+  .nav-top {
+      .scrollbar.nav.scrollbar-hidden {
+        top: 0!important;
+      }
+      
+  }
