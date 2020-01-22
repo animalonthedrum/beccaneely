@@ -28,8 +28,10 @@ const Info= () => {
                 <p>I’ve been art making, designing and illustrating for over a decade. I’ve learned to be scrappy, to be quick on my toes, to be adaptable, to ask questions, to keep learning and endlessly loving the craft. “Start where you are. Use what you have. Do what you can.” (Arthur Ashe)</p>
                 <p>Outside of work, you’ll find me: on a meditation cushion, making a mess in the kitchen, or lost in the woods. I’m currently living in Robbinsdale, Minnesota with my partner and our dogs: Waffles and Mr. Weenie.</p>
                 <p>Top 5 Strengths: Empathy, Strategic, Ideation, Intellection and Futuristic.</p>
+                <div className="contact">
                 <h3>Contact</h3>
                 <a href="mailto:becca.m.neely@gmail.com">becca.m.neely@gmail.com</a>
+                </div>
             </div>
         </div>
         </div>
