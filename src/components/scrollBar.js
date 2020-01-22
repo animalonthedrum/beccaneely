@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 
 const ScrollBar = ({name, children}) => {
    
+   if (typeof window === 'undefined') {
+      global.window = {}
+    }
+    
    let [pos, setPos] = useState(window.pageYOffset)
    let [visible, setVisible] = useState(true)
    
