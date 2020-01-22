@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: calc($max-content + 100px);
+    max-width: calc(#{$max-content} + 100px);
     height: $nav-height;
     padding-left: $desktop-padding;
     padding-right: $desktop-padding;

@@ -1,13 +1,9 @@
 import React, {Fragment, useEffect} from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
 import { Link } from 'gatsby'
-// import Header from "./header"
-import Menu from './menu'
 import ScrollBar from "./scrollBar"
 import VerticalSocial from "./verticalFooter"
 import BreadCrumbs from './breadcrumbs'
-// import styled from '@emotion/styled'
 import "./layout.css"
 import "./index.scss"
 
@@ -43,19 +39,9 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
       console.log('test')
     };
   }, [])
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
 
   return (
     <Fragment>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <ScrollBar name='nav'>
       <div className='navLogo'>
       <Link to="/"><Logo></Logo></Link>
@@ -64,7 +50,6 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
           <li><Link activeClassName='active' to="/">WORK</Link></li>
           <li><Link activeClassName='active' to="/info">INFO</Link></li>
         </ul>
-        {/* <Menu/> */}
       </ScrollBar>
       
       <main>{children}</main>
