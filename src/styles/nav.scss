@@ -15,7 +15,7 @@
     z-index: 10;
     background-color: white;
     .navLogo {
-        width: 200px;
+        width: 250px;
         svg {
             width: 100%;
             height: auto;
@@ -28,8 +28,8 @@
     ul{
         width: 100%;
         display: flex;
-        align-items: flex-end;
-        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
         list-style: none;
         margin-top: 0;
         margin-bottom: 0;
@@ -82,8 +82,8 @@
       }
   }
 
-
-.reveal {
+  .reveal {
+    width: 100%;
     transition:opacity .3s linear;
 }
 [data-visible="true"] {
@@ -93,7 +93,6 @@
     opacity: 0;
     transition:opacity .3s linear;
   }
-
   .nav-top {
       .scrollbar.nav.scrollbar-hidden {
         top: 0!important;

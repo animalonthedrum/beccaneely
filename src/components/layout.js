@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 import Menu from './menu'
 import ScrollBar from "./scrollBar"
 import VerticalSocial from "./verticalFooter"
+import BreadCrumbs from './breadcrumbs'
 // import styled from '@emotion/styled'
 import "./layout.css"
 import "./index.scss"
@@ -20,7 +21,7 @@ function Logo() {
   );
 }
 
-const Layout = ({ children }) => {
+const Layout = ({ children, prevUrl, nextUrl, hide }) => {
   useEffect(() => {
     var isScrolling;
     console.log('scroll');
@@ -57,12 +58,11 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <ScrollBar name='nav'>
       <div className='navLogo'>
-      <Logo><Link to="/"></Link></Logo>
+      <Link to="/"><Logo></Logo></Link>
       </div>
         <ul>
-          <li><Link activeClassName='active' to="/">Work</Link></li>
-          <li><Link activeClassName='active' to="/about">About</Link></li>
-          <li><Link activeClassName='active' to="/contact">Contact</Link></li>
+          <li><Link activeClassName='active' to="/">WORK</Link></li>
+          <li><Link activeClassName='active' to="/info">INFO</Link></li>
         </ul>
         {/* <Menu/> */}
       </ScrollBar>
@@ -74,7 +74,8 @@ const Layout = ({ children }) => {
       </ScrollBar>
         
         <footer>
-          <span>© {new Date().getFullYear()}, <Link to="/"> Becca Neely</Link></span>
+          <span>© {new Date().getFullYear()},<Link to="/">&nbsp;Becca Neely</Link></span>
+          <BreadCrumbs hide={hide} nextUrl={nextUrl} prevUrl={prevUrl}/>
         </footer>
     </Fragment>
   )

@@ -28,7 +28,7 @@ const data = [
 {src:wtc12, alt:'scrub'},
 ]
 const WTC = () => (
-<Layout>
+<Layout prevUrl='/yogagurus' nextUrl='/jensjars'>
     <div className="wtc-content-container">
     <h1>Wax my back Page</h1>
     <p>Its hairy, its scary and just keeps coming back. That orange is oozing, is it sexual. Watch out for falling lavender. Scrub a dub dub. Social adds scrolling buy stuff.</p>
