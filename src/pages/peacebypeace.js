@@ -40,8 +40,8 @@ const PeacebyPeace = () => {
     return (
         <Layout prevUrl='/mnsf' nextUrl='/solsounds'>
     <div className="project-content-container">
-    <h1>Wax my back Page</h1>
-    <p>Its hairy, its scary and just keeps coming back. That orange is oozing, is it sexual. Watch out for falling lavender. Scrub a dub dub. Social adds scrolling buy stuff.</p>
+    <h1>Peace by Peace Yoga: <br/>Brand Identity</h1>
+    <p>Founded by twin cities yogini, Taralee Cayce, Peace by Piece offers trauma-informed yoga, breath work and hatha yoga in the healing serenity of a salt cave. We wanted the logo to feel therapeutic, spiritual and relaxed—evoking the same feels as Taralee’s classes. The pieces of mosaic making up the logo mark remind us that broken is beautiful. The color palette is inspired by the pink Himalayan salt bricks that structure the halotherapeutic cave walls. Accompanied by peaceful, calm and gentle blues.</p>
     <div className="project-image">
     <Img fluid={data.pbp1.childImageSharp.fluid} alt='Peace by Peace Branding' />
     </div>

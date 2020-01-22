@@ -45,10 +45,11 @@ const YogaGurus = () => {
     }
   `)
     return (
-        <Layout>
+        <Layout prevUrl='/play' nextUrl='/waxingthecity'>
     <div className="project-content-container">
-    <h1>Wax my back Page</h1>
-    <p>Its hairy, its scary and just keeps coming back. That orange is oozing, is it sexual. Watch out for falling lavender. Scrub a dub dub. Social adds scrolling buy stuff.</p>
+    <h1>Yoga Gurus</h1>
+    <p>This was a self-initiated project that started from a doodle in my yoga teacher training notes. I illustrated a few of the fellas responsible for bringing yoga to the West. They're pretty incredible dudes, who've inspired many mind/body/souls.</p>
+    <p>Oh, and I paired them with an inspiring quote—because you gotta, right?</p>
     <div className="project-image-row">
     <div className="project-image-col">
     <Img fluid={data.yg1.childImageSharp.fluid} alt='Yoga Gurus Illustration' />

@@ -56,7 +56,8 @@ const SolSounds = () => {
         <Layout prevUrl='/peacebypeace' nextUrl='/play'>
     <div className="project-content-container">
     <h1>Sol Sounds:<br/>Logo + Identity</h1>
-      <p>did this logo for $200</p>
+      <p>Logo and identity for a start-up, independent record label based in California.</p>
+      <p>The label has an international vibe, and works with musicians that are passionate about "handmade" sounds—meaning music made by human hands and physical instruments, as opposed to computers or machines. </p>
     <div className="project-image">
     <Img fluid={data.ss1.childImageSharp.fluid} alt='Sol Sounds Branding' />
     </div>

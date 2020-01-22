@@ -97,7 +97,8 @@ const Surescripts = () => {
         <Layout prevUrl='/jensjars' nextUrl='/carpenoctem'>
     <div className="project-content-container">
     <h1>Surescripts:<br/>Brand Guide + Narrative</h1>
-      <p>this place sucked to work at. But i traded in a fitbit for airpods!</p>
+      <p>Shortly after I came on board, the Surescripts in-house creative team enlisted me to help evolve their branding. Here you’ll see few of the many layouts I designed for Surescripts’ comprehensive brand guide and brand narrative. I worked closely with the creative director and senior marketing copywriter to develop content.</p>
+      <p>The goal was to differentiate Surescripts in the healthcare IT market, and elevate the look of their brand, without doing a total overhaul. We did so with trendy duotone imagery, fun and emotive lifestyle photography, contemporary monoline icons and illustrations. We also introduced a complimentary typeface—sturdy and robust, Univers. </p>
     <div className="project-image">
     <Img fluid={data.ss1.childImageSharp.fluid} alt='Surescripts Branding' />
     </div>

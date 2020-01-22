@@ -34,7 +34,7 @@ const MnSf = () => {
     return (
         <Layout prevUrl='/anytimefitness' nextUrl='/peacebypeace'>
     <div className="project-content-container">
-    <h1>MN State Fair<br/>Illustrations</h1>
+    <h1>MN State Fair:<br/>Illustrations</h1>
     <p>These digital illustrations were a self-initiated project in celebration of the Great Minnesota Get(Eat)-Together.</p>
     <div className="project-image">
     <Img fluid={data.mnsf1.childImageSharp.fluid} alt='MN Sate Fair' />

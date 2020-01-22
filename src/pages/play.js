@@ -96,7 +96,7 @@ const Play = () => {
     return (
         <Layout prevUrl='/solsounds' nextUrl='/yogagurus'>
     <div className="project-content-container">
-    <h1>Misc. Illustration</h1>
+    <h1>Misc. Illustrations</h1>
     <div className="project-image">
     <Img fluid={data.play1.childImageSharp.fluid} alt='Illustration' />
     </div>

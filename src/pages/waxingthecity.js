@@ -30,8 +30,8 @@ const data = [
 const WTC = () => (
 <Layout prevUrl='/yogagurus' nextUrl='/jensjars'>
     <div className="wtc-content-container">
-    <h1>Wax my back Page</h1>
-    <p>Its hairy, its scary and just keeps coming back. That orange is oozing, is it sexual. Watch out for falling lavender. Scrub a dub dub. Social adds scrolling buy stuff.</p>
+    <h1>Waxing the City:<br/>Social Media Content</h1>
+    <p>We ideate and create monthly content for franchisees and the Waxing the City accounts. Key strategies are to draw awareness to WTC as an educator and bring attention to their growing roster of beauty products.</p>
     {data.map(img => <div className='col'>
     <img src={img.src} alt={img.alt}/>
     </div>)}

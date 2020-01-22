@@ -4,6 +4,8 @@
     margin-right: auto;
     margin-top: $nav-height;
     padding-top: $desktop-padding;
+    padding-left: 100px;
+    padding-right: 100px;
     .row {
         display:flex;
         flex-wrap:wrap;
@@ -21,9 +23,6 @@
             width:calc(50% - #{$desktop-padding});
             display:flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            position: relative;
             &:nth-of-type(1){
                 margin-right: calc(#{$desktop-padding/2});
                 @include tablet-sm {

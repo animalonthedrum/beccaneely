@@ -24,8 +24,8 @@ const data = [
 const ATF = () => (
 <Layout prevUrl='/carpenoctem' nextUrl='/mnsf'>
     <div className="wtc-content-container">
-    <h1>Wax my back Page</h1>
-    <p>Its hairy, its scary and just keeps coming back. That orange is oozing, is it sexual. Watch out for falling lavender. Scrub a dub dub. Social adds scrolling buy stuff.</p>
+    <h1>Anytime Fitness:<br/>Social Media Content</h1>
+    <p>Social media content for Anytime Fitness. We ideate and create monthly content for each of Anytime Fitness’s strategic pillars: healthy lifestyle, nutrition and coaching. Our social content strategy supports the larger marketing initiative to shift brand perception from being a convenience gym to <em>the</em> gym for the results, support and expertise you need to achieve your every goal. Being on such a small team, many times I am hands on with ideas from concept through final execution.</p>
     {data.map(img => <div className='col'>
     <img src={img.src} alt={img.alt}/>
     </div>)}

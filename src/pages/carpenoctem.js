@@ -55,7 +55,7 @@ const CarpeNoctem = () => {
         <Layout prevUrl='/surescripts' nextUrl='/anytimefitness'>
     <div className="project-content-container">
     <h1>Carpe Noctem<br/>Visual Identity</h1>
-      <p>Carpe Noctem is an organic, gourmet mushroom company in the Poconos region of Pennsylvania. I’ve been working with them on brand strategy and visual assets including this hand-nibbed, inky, Ralph Steadman inspired logotype and mushroom illustration. <strong>Full case study coming soon.</strong></p>
+      <p> A little bit Fear & Loathing, a little bit boujee. Carpe Noctem, meaning Seize the Night, is a mom and pop mushroom shop based in the Poconos region of Pennsylvania. Max, founder, and his wife, Chelsea, started and run this company in the late hours of their night—when the kids are asleep and the grind of everyday life stills. Carpe Noctem is a grower, forager and supplier of organic mushrooms. I helped them get their brand off the ground with a custom hand-nibbed, inky, Ralph Steadman inspired logotype, color palette, supporting fonts, hand-drawn mushroom graphics and patterns.</p>
     <div className="project-image">
     <Img fluid={data.cpn1.childImageSharp.fluid} alt='Carpe Noctem Branding' />
     </div>

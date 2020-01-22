@@ -69,7 +69,7 @@ const JJ = () => {
       <Layout prevUrl='/waxingthecity' nextUrl='/surescripts'>
         <div className="project-content-container">
         <h1>Jen's Jars: <br/>Visual Identity</h1>
-        <p>I had the pleasure of working with Minnetonka based business owner, Jen Alexander, on the branding of her plant-based soups and spreads, i.e. Jen’s Jars. Jen is on a mission to make healthy, real food that is equal parts nutritious, convenient, and delicious. Jen wanted a handcrafted, bountiful, playful and lush look her her brand. I designed a branding package that included her logotype, brand illustrations, labels and signage for her markets and in-store demos. You can find these flirty little jars on the shelves at Lakewinds co-op locations and seasonally at many of Minneapolis’ farmers markets.</p>
+        <p>I had the pleasure of working with Minnetonka-based business owner, Jen Alexander, on the branding of her plant-based soups and spreads, i.e. Jen’s Jars. Jen is on a mission to make healthy, real food that is equal parts nutritious, convenient, and delicious. Jen wanted a handcrafted, bountiful and playful look her her brand. I designed a branding package that included her logotype, brand illustrations, labels and signage for her markets and in-store demos. You can find these flirty little jars on the shelves at Lakewinds co-op locations and seasonally at many of Minneapolis’ farmers markets.v</p>
         <div className="project-image">
         <Img fluid={data.jj1.childImageSharp.fluid} alt='Jens Jars Branding' />
         </div>
