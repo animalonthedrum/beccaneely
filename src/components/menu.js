@@ -7,7 +7,6 @@ function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     var isScrolling;
-    document.body.className = 'signin';
     // console.log('scroll');
     const topOffset = () => {
       window.clearTimeout( isScrolling );
@@ -20,7 +19,6 @@ function Menu() {
     }
     window.addEventListener("scroll", topOffset);
     return () => {
-      document.body.className = '';
       // console.log('unscroll');
       window.removeEventListener("scroll", topOffset);
     };
