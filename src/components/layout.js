@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import ScrollBar from "./scrollBar"
 import VerticalSocial from "./verticalFooter"
 import BreadCrumbs from './breadcrumbs'
+import Menu from './Menu'
 import "./layout.css"
 import "./index.scss"
 
@@ -50,6 +51,7 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
           <li><Link activeClassName='active' to="/">WORK</Link></li>
           <li><Link activeClassName='active' className='infoLink' to="/info">INFO</Link></li>
         </ul>
+        <Menu/>
       </ScrollBar>
       
       <main>{children}</main>

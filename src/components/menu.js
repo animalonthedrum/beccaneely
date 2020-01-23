@@ -2,24 +2,12 @@ import React, { useState, useEffect } from 'react';
 import useLockBodyScroll from './use-lock-body-scroll';
 import { Link } from "gatsby"
 
-function Icon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      data-name="Layer 1"
-      viewBox="0 0 25 25"
-    >
-      <path d="M2 2L22 2" className="top"></path>
-      <path d="M2 10L18 10" className="middle"></path>
-      <path d="M2 18L14 18" className="bottom"></path>
-    </svg>
-  );
-}
 
 function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     var isScrolling;
+    document.body.className = 'signin';
     // console.log('scroll');
     const topOffset = () => {
       window.clearTimeout( isScrolling );
@@ -32,6 +20,7 @@ function Menu() {
     }
     window.addEventListener("scroll", topOffset);
     return () => {
+      document.body.className = '';
       // console.log('unscroll');
       window.removeEventListener("scroll", topOffset);
     };
@@ -40,9 +29,9 @@ function Menu() {
 
 
   return (
-    <div>
+    <div className='mobile-menu'>
       <div className="menuButton">
-        <button onClick={() => setMenuOpen(true)}><Icon/></button>
+        <button onClick={() => setMenuOpen(true)}><span></span><span></span></button>
       </div>
 
       {menuOpen && (
@@ -59,8 +48,7 @@ function NavLinks({ onClose }) {
   return (
     <ul className="menu-overlay" onClick={onClose}>
       <li><Link to="/" onClick={onClose}>Work</Link></li>
-      <li><Link to="/about" onClick={onClose}>About</Link></li>
-      <li><Link to="/contact" onClick={onClose}>Contact</Link></li>
+      <li><Link to="/info" onClick={onClose}>Info</Link></li>
     </ul>
   );
 }
