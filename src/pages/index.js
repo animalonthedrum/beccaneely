@@ -81,7 +81,7 @@ const IndexPage = () => {
 `)
 
 return (
-  <Layout hide='hide'>
+  <Layout prevUrl='' nextUrl='' hide='hide'>
     <SEO title="Home" />
     <div className="content-container">
     <Row>

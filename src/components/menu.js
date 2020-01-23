@@ -20,19 +20,19 @@ function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     var isScrolling;
-    console.log('scroll');
+    // console.log('scroll');
     const topOffset = () => {
       window.clearTimeout( isScrolling );
       // Set a timeout to run after scrolling ends
       isScrolling = setTimeout(function() {
         // Run the callback
-        console.log( 'Scrolling has stopped.' );
+        // console.log( 'Scrolling has stopped.' );
     
       }, 100);
     }
     window.addEventListener("scroll", topOffset);
     return () => {
-      console.log('unscroll');
+      // console.log('unscroll');
       window.removeEventListener("scroll", topOffset);
     };
   }, [])

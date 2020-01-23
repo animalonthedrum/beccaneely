@@ -16,3 +16,13 @@ $desktop-padding:30px;
 $mobile-padding:15px;
 
 $nav-height:140px;
+$black:#231f20;
+$orchid:#d4a4bc;
+$lime:rgba(215,232,45,1);
+$blue:rgba(14,205,211,1);
+body{
+    font-family:$font-body;
+    h1,h2,h3,h4,h5,p,a {
+        font-family:$font-body;
+    }
+}

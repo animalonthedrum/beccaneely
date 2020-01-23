@@ -4,18 +4,20 @@ footer {
     display:flex;
     justify-content:flex-start;
     align-items:center;
-    color:black;
+    color:$black;
     max-width: $max-content;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: $mobile-padding;
+    padding-right: $mobile-padding;
     padding-bottom: $desktop-padding;
     @include mobile {
         padding-bottom: $mobile-padding;
     }
     a, span {
         text-decoration:none;
-        color:black;
+        color:$black;
       }
       span {
           width: 100%;
@@ -45,5 +47,34 @@ footer {
         &.hide {
             display: none;
         }
+      }
+      .footerName {
+        &:after {
+            content:'|';
+            display: inline;
+            font-size: inherit;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+      }
+      .footerContact {
+          position: relative;
+          &:after {
+              position: absolute;
+              width: 0%;
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: transform .3s ease-in-out, width .3s linear;
+          }
+          &:hover {
+              &:after {
+                  content:'';
+                  transform:scaleX(1);
+                  width: 100%;
+                  height: 1px;
+                  background-color: $black;
+                  display: block;
+              }
+          }
       }
 }

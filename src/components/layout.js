@@ -20,23 +20,23 @@ function Logo() {
 const Layout = ({ children, prevUrl, nextUrl, hide }) => {
   useEffect(() => {
     var isScrolling;
-    console.log('scroll');
+    // console.log('scroll');
     const stopScroll = () => {
       window.clearTimeout( isScrolling );
 
       // Set a timeout to run after scrolling ends
       isScrolling = setTimeout(function() {
         // Run the callback
-        console.log( 'Scrolling has stopped.' );
+        // console.log( 'Scrolling has stopped.' );
         document.body.classList.add('stopShow');
       }, 1000);
       document.body.classList.remove('stopShow');
     }
     window.addEventListener("scroll", stopScroll);
     return () => {
-      console.log('unscroll');
+      // console.log('unscroll');
       window.removeEventListener("scroll", stopScroll);
-      console.log('test')
+      // console.log('test')
     };
   }, [])
 
@@ -48,7 +48,7 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
       </div>
         <ul>
           <li><Link activeClassName='active' to="/">WORK</Link></li>
-          <li><Link activeClassName='active' to="/info">INFO</Link></li>
+          <li><Link activeClassName='active' className='infoLink' to="/info">INFO</Link></li>
         </ul>
       </ScrollBar>
       
@@ -59,7 +59,7 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
       </ScrollBar>
         
         <footer>
-          <span>© {new Date().getFullYear()},<Link to="/">&nbsp;Becca Neely</Link></span>
+          <span>© {new Date().getFullYear()},<Link className='footerName' to="/">&nbsp;Becca Neely</Link><a className='footerContact' href="mailto:becca.m.neely@gmail.com">becca.m.neely@gmail.com</a></span>
           <BreadCrumbs hide={hide} nextUrl={nextUrl} prevUrl={prevUrl}/>
         </footer>
     </Fragment>

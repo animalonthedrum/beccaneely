@@ -16,7 +16,7 @@ const Info= () => {
     }
   `)
     return (
-        <Layout hide='hide'>
+        <Layout prevUrl='' nextUrl='' hide='hide'>
         <div className="about-content-container">
         <div className="row">
         <div className="col">

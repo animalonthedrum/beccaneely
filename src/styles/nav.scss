@@ -16,6 +16,9 @@
     transition: top .6s ease-in-out;
     z-index: 10;
     background-color: white;
+    @include mobile {
+        height: 90px;
+    }
     .navLogo {
         width: 250px;
         svg {
@@ -23,7 +26,7 @@
             height: auto;
             path {
                 transition: fill .6s ease-in-out;
-                fill:black;
+                fill:$black;
             }
         }
     }
@@ -44,11 +47,63 @@
             padding-top: 2px;
             margin-bottom: 0;
             a {
+                font-family: $font-primary;
+                font-weight: 700;
+                letter-spacing: 2px;
                 text-decoration: none;
-                color: black;
-                transition: color .6s ease-in-out;
+                color: $black;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                &:after {
+                    content:'';
+                    height: 8px;
+                    width: 0;
+                    display: block;
+                    position: absolute;
+                    bottom: 50%;
+                    transform: translateY(50%);
+                    z-index: -1;
+                    background-color: $lime;
+                    transition: width .3s;
+                }
+                &:hover {
+                    &:after {
+                        width:calc(100% + 10px);
+                    }
+                }
+
                 &.active {
-                    text-decoration: underline;
+                    text-decoration: none;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    &:after {
+                        content:'';
+                        height: 8px;
+                        width: calc(100% + 10px);
+                        display: block;
+                        position: absolute;
+                        bottom: 50%;
+                        transform: translateY(50%);
+                        z-index: -1;
+                        background-color: $lime;
+                    }
+                }
+                &.infoLink {
+                    &:after {
+                        background-color: $blue;
+                    }
+                    &:hover {
+                        &:after {
+                            background-color: $blue;
+                        }
+                    }
+                    &.active {
+                        &:after {
+                            background-color: $blue;
+                        }
+                    }
                 }
             }
         }
