@@ -31,7 +31,7 @@ const WTC = () => (
 <Layout prevUrl='/yogagurus' nextUrl='/jensjars'>
     <div className="wtc-content-container">
     <h1>Waxing the City:<br/>Social Media Content</h1>
-    <p>We ideate and create monthly content for franchisees and the Waxing the City accounts. Key strategies are to draw awareness to WTC as an educator and bring attention to their growing roster of beauty products.</p>
+    <p>Organic social content for Waxing the City.</p>
     {data.map(img => <div className='col'>
     <img src={img.src} alt={img.alt}/>
     </div>)}

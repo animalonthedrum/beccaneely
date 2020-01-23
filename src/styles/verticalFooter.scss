@@ -35,6 +35,22 @@
                 color: $black;
                 font-weight: 700;
                 font-size: 14px;
+                position: relative;
+                &:after {
+                    content:'';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    background-color: $black;
+                    width: 0;
+                    transition: width .3s linear;
+                }
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

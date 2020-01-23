@@ -14,6 +14,8 @@ footer {
     padding-bottom: $desktop-padding;
     @include mobile {
         padding-bottom: $mobile-padding;
+        flex-direction: column;
+        font-size: 12px;
     }
     a, span {
         text-decoration:none;
@@ -22,15 +24,27 @@ footer {
       span {
           width: 100%;
           display: flex;
+          @include mobile {
+              order: 2;
+              align-items: center;
+              justify-content: center;
+          }
       }
       .breadCrumbs {
           width: 100%;
           padding-right: 60px;
+          @include mobile {
+              order: 1;
+              padding-right: 0;
+          }
           ul {
             list-style: none;
             display: flex;
             justify-content: flex-end;
             align-items: center;
+            @include mobile {
+                justify-content: center;
+            }
             li {
                 padding-right: $desktop-padding;
             }
@@ -42,6 +56,22 @@ footer {
             margin-left: 0;
             a {
                 text-decoration: none;
+                position: relative;
+                &:after {
+                    content:'';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    background-color: $black;
+                    width: 0;
+                    transition: width .3s linear;
+                }
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
+                }
             }
         }
         &.hide {
@@ -60,21 +90,19 @@ footer {
       .footerContact {
           position: relative;
           &:after {
-              position: absolute;
-              width: 0%;
-              transform: scaleX(0);
-              transform-origin: left;
-              transition: transform .3s ease-in-out, width .3s linear;
-          }
-          &:hover {
-              &:after {
-                  content:'';
-                  transform:scaleX(1);
-                  width: 100%;
-                  height: 1px;
-                  background-color: $black;
-                  display: block;
-              }
-          }
+            content:'';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            background-color: $black;
+            width: 0;
+            transition: width .3s linear;
+        }
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+        }
       }
 }

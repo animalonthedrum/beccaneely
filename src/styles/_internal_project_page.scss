@@ -3,7 +3,8 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        font-family: $font-primary;
+        font-family: $font-body;
+        font-weight: 700;
         text-align: center;
     }
     p {
@@ -28,6 +29,7 @@
     @include mobile {
         padding-left: $mobile-padding;
         padding-right: $mobile-padding;
+        margin-top: 70px;
     }
      .project-image {
         flex: 1 1 100%;

@@ -32,6 +32,18 @@ const Info= () => {
                 <h3>Contact</h3>
                 <a href="mailto:becca.m.neely@gmail.com">becca.m.neely@gmail.com</a>
                 </div>
+                <div className="mobile-social">
+                  <ul>
+                    <li><a  target="_blank" rel="noopener noreferrer" alt='instagram' href="https://www.instagram.com/beccaneely/">instagram</a>
+                    </li>
+                    <li><a  target="_blank" rel="noopener noreferrer" alt='facebook' href="https://www.facebook.com/beccaneelydesignco/">facebook</a>
+                    </li>
+                    <li><a  target="_blank" rel="noopener noreferrer" alt='dribbble' href="https://dribbble.com/beccaneely/">dribbble</a>
+                    </li>
+                    <li><a  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/becca-neely/">linkedin</a>
+                    </li>
+                  </ul>
+              </div>
             </div>
         </div>
         </div>
