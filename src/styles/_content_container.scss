@@ -8,7 +8,7 @@ body {
     margin-top: $nav-height;
     padding-top: $desktop-padding;
     @include mobile {
-        margin-top: 70px;
+        margin-top: 40px;
     }
     @include tablet {
         margin-top: 70px;
