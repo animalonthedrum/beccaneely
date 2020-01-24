@@ -7,6 +7,12 @@ body {
     margin-right: auto;
     margin-top: $nav-height;
     padding-top: $desktop-padding;
+    @include mobile {
+        margin-top: 70px;
+    }
+    @include tablet {
+        margin-top: 70px;
+    }
     .row {
         display:flex;
         flex-wrap:wrap;
