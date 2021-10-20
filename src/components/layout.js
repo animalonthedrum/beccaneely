@@ -48,8 +48,8 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
       <Link to="/"><Logo></Logo></Link>
       </div>
         <ul>
-          <li><Link activeClassName='active' to="/">WORK</Link></li>
-          <li><Link activeClassName='active' className='infoLink' to="/info">INFO</Link></li>
+          <li><Link activeClassName='active' to="/shop">SHOP</Link></li>
+          <li><Link activeClassName='active' className='infoLink' to="/portfolio">PORTFOLIO</Link></li>
         </ul>
         <Menu/>
       </ScrollBar>

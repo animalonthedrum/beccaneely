@@ -45,8 +45,8 @@ function NavLinks({ onClose }) {
   useLockBodyScroll();
   return (
     <ul className="menu-overlay" onClick={onClose}>
-      <li><Link to="/" onClick={onClose}>Work</Link></li>
-      <li><Link to="/info" onClick={onClose}>Info</Link></li>
+      <li><Link to="/shop" onClick={onClose}>SHOP</Link></li>
+      <li><Link to="/portfolio" onClick={onClose}>PORTFOLIO</Link></li>
     </ul>
   );
 }
