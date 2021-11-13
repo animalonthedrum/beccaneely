@@ -5,6 +5,8 @@ import ScrollBar from "./scrollBar"
 import VerticalSocial from "./verticalFooter"
 import BreadCrumbs from './breadcrumbs'
 import Menu from './Menu'
+import Cart from "../components/shop/cart"
+import { CartProvider } from "use-shopping-cart"
 import "./layout.css"
 import "./index.scss"
 
@@ -43,6 +45,16 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
 
   return (
     <Fragment>
+          <CartProvider
+      mode="payment"
+      cartMode="client-only"
+      stripe={process.env.GATSBY_STRIPE_PUBLISHABLE_KEY}
+      successUrl={`${window.location.origin}/success/`}
+      cancelUrl={`${window.location.origin}/`}
+      currency="USD"
+      allowedCountries={["US", "GB", "CA"]}
+      billingAddressCollection={true}
+    >
       <ScrollBar name='nav'>
       <div className='navLogo'>
       <Link to="/"><Logo></Logo></Link>
@@ -50,6 +62,7 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
         <ul>
           <li><Link activeClassName='active' to="/shop">SHOP</Link></li>
           <li><Link activeClassName='active' className='infoLink' to="/portfolio">PORTFOLIO</Link></li>
+          <Cart />
         </ul>
         <Menu/>
       </ScrollBar>
@@ -64,6 +77,7 @@ const Layout = ({ children, prevUrl, nextUrl, hide }) => {
           <span>© {new Date().getFullYear()},<Link className='footerName' to="/">&nbsp;Becca Neely</Link><a className='footerContact' href="mailto:becca.m.neely@gmail.com">becca.m.neely@gmail.com</a></span>
           <BreadCrumbs hide={hide} nextUrl={nextUrl} prevUrl={prevUrl}/>
         </footer>
+        </CartProvider>
     </Fragment>
   )
 }

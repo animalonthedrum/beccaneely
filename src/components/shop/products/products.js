@@ -1,14 +1,14 @@
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import ProductCard from "./productCard";
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import ProductCard from './productCard'
 
 const conatinerStyles = {
-  display: "flex",
-  flexDirection: "row",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  padding: "1rem 0 1rem 0",
-};
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+  padding: '1rem 0 1rem 0',
+}
 
 export default (props) => (
   <StaticQuery
@@ -27,7 +27,6 @@ export default (props) => (
               product {
                 id
                 name
-                images
               }
             }
           }
@@ -42,11 +41,10 @@ export default (props) => (
             name: price.product.name,
             price: price.unit_amount,
             currency: price.currency,
-            image: price.product.images,
-          };
-          return <ProductCard key={price.id} sku={newSku} />;
+          }
+          return <ProductCard key={price.id} sku={newSku} />
         })}
       </div>
     )}
   />
-);
+)
